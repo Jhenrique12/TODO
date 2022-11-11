@@ -1,2 +1,2 @@
 # TODO
-A Todo project with JavaScript
+A TODO project with JavaScript
