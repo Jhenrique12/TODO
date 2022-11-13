@@ -12,5 +12,7 @@ form.addEventListener("submit", (e) => {
     todoElement.innerText = todoValue;
 
     todoList.appendChild(todoElement);
+
+    input.value = "";
   }
 });
