@@ -1,3 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Sono&display=swap");
+* {
+  box-sizing: border-box;
+}
 
+body {
+  background-color: #f5f5f5;
+  font-family: "Sono", sans-serif;
+  margin: 0;
+}
+
+.mainTitle {
+  color: royalblue;
+  font-size: 5rem;
+  text-align: center;
+  opacity: 0.5;
+}
+
+#form {
+  margin: auto;
+  max-width: 100%;
+  width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+#form .input {
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  display: block;
+  width: 100%;
+  border: none;
+}
+#form .input::placeholder {
+  color: royalblue;
+  opacity: 0.5;
+}
+#form .input:focus {
+  outline: none;
+  border: 2px solid royalblue;
+}
+#form .todoList {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  list-style-type: none;
+}
+#form .todoList li {
+  border-top: 1px dashed #e5e5e5;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+}
 
 /*# sourceMappingURL=style.css.map */
