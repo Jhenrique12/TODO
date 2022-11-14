@@ -23,7 +23,6 @@ body {
 #form {
   max-width: 100%;
   width: 400px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 #form .input {
   font-size: 2rem;
@@ -35,7 +34,7 @@ body {
 }
 #form .input::placeholder {
   color: royalblue;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 #form .input:focus {
   outline: none;
@@ -64,9 +63,12 @@ small {
   margin-bottom: 2rem;
   text-align: center;
 }
+small .mobileText {
+  display: none;
+}
 
 .footer {
-  margin-left: 100px;
+  margin-left: 5%;
   color: royalblue;
   opacity: 0.7;
   font-size: 0.8rem;
@@ -81,6 +83,51 @@ small {
 .footer a:hover {
   color: darkblue;
   font-weight: bold;
+}
+
+@media (max-width: 769px) {
+  small .desktopText {
+    display: none;
+  }
+  small .mobileText {
+    display: block;
+  }
+  .footer {
+    font-size: 0.5rem;
+    margin-left: 2%;
+  }
+}
+@media (max-width: 426px) {
+  .mainTitle {
+    margin-top: 15%;
+    font-size: 3rem;
+  }
+  #form {
+    margin-top: 5%;
+  }
+  #form .input {
+    width: 80%;
+    font-size: 1.5rem;
+    margin-left: 10%;
+  }
+  #form .todoList {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  #form .todoList li {
+    font-size: 1rem;
+  }
+  small .desktopText {
+    display: none;
+  }
+  small .mobileText {
+    display: block;
+  }
+  .footer {
+    margin-top: 30%;
+    position: relative;
+    font-size: 0.5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
